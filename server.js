@@ -22,6 +22,14 @@ app.get('/Johan.css', (req, res) => {
     })
 
 })
+app.get('/selfie.jpg', (req, res) => {
+    fs.readFile('selfie.jpg', (err, data) => {
+        res.setHeader('Content-Type', 'image/jpg');
+       
+        res.send(data);
+    })
+
+})
 
 
 

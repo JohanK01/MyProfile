@@ -1,7 +1,12 @@
 body {
-    background-color: cornsilk;
+    background-color: white;
 }
-
+.header {
+  padding: 80px; /* some padding */
+  text-align: center; /* center the text */
+  background: rgb(119, 240, 224); /* green background */
+  color: black; /* white text color */
+}
 h1,
 h2 {
     text-align: center;
@@ -15,3 +20,68 @@ h2 {
     text-align: center;
     font-size: 25px;
 }
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Column container */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #f1f1f1; /* Grey background color */
+    padding: 20px; /* Some padding */
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%; /* Set the width of the main content */
+    background-color: white; /* White background color */
+    padding: 20px; /* Some padding */
+  }
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  .footer {
+    padding: 20px; /* Some padding */
+    text-align: center; /* Center text*/
+    background:rgb(119, 240, 224); /* Grey background */
+  }
