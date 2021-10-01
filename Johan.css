@@ -1,24 +1,29 @@
 body {
-    background-color: white;
+    background: rgb(56, 215, 255) ; 
 }
 .header {
-  padding: 80px; /* some padding */
+  padding: 60px; /* some padding */
   text-align: center; /* center the text */
-  background: rgb(119, 240, 224); /* green background */
-  color: black; /* white text color */
+  background: rgb(56, 215, 255) ; 
+  color: white; /* white text color */
+  text-shadow: 1px 1px grey;
+ 
 }
 h1,
 h2 {
     text-align: center;
+    font-size: 40px;
 }
 
 .info {
     margin-left: auto;
-    margin-right: auto;
-    background-color: white;
+    margin-right: auto;  
     width: 50%;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
+}
+.github{
+    font-size: larger;
 }
 * {
     box-sizing: border-box;
@@ -33,16 +38,20 @@ h2 {
   /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
   .side {
-    flex: 30%; /* Set the width of the sidebar */
+    flex: 40%; /* Set the width of the sidebar */
     background-color: #f1f1f1; /* Grey background color */
     padding: 20px; /* Some padding */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
   }
   
   /* Main column */
   .main {
-    flex: 70%; /* Set the width of the main content */
+    flex: 60%; /* Set the width of the main content */
     background-color: white; /* White background color */
     padding: 20px; /* Some padding */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
   }
 
 
@@ -83,5 +92,9 @@ h2 {
   .footer {
     padding: 20px; /* Some padding */
     text-align: center; /* Center text*/
-    background:rgb(119, 240, 224); /* Grey background */
+    background: rgb(56, 215, 255) ;  /* Grey background */
+    color: white;
+  }
+  .gmail{
+      font-size: 25px;
   }
