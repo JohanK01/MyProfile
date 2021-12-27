@@ -1,5 +1,31 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+block Header 
+  div(class="container-fluid bg-black p-2 text-light")
+    p(class="display-5 text-center" ) Team-ICE
+  p(class="display-2 text-center p-0" ) Johan Klausen
+
+block Content
+  div(class="container-fluid")
+    div(class="row justify-content-center px-2")
+      div(class="col-4 bg-secondary text-center")
+        p Here is my 
+          a(href="https://github.com/JohanK01") Github
+        p My name is Johan Klausen, my hobbies are spending time with friends and working on cars.
+        p I have a part-time job at OKQ8 and at the same time studying full time to become a programmer.
+        p I like to try new things and I'm always curious.
+
+      div(class="col-8 bg-success")
+        div(class="card shadow mb-4 bg-white w-25 h-100")
+          div(class="card-header")
+            h3 Johan Klausen 
+          div(class="card-body")
+            img(src ="../images/selfie.jpg" class="img-fluid")
+            p klausenjohan23@gmail.com
+            div(class="btn btn-primary" onclick="Load()")
+              span(id="profile") My profile
+          div(class="card-footer")
+            a(href ="https://github.com/JohanK01")
+              i(class="fa fa-github px-1" style="font-size:36px; color:black;")
+            a(href="https://www.linkedin.com/in/johan-klausen-478227227/")
+              i(class="fa fa-linkedin px-1" style="font-size:36px;")
